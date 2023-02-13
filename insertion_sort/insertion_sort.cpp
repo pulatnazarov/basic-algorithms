@@ -13,15 +13,3 @@ vector<int> insertionSort(vector<int> v) {
     }
     return v;
 }
-
-int32_t main() {
-    vector<int> v = {5, 4, 3, 0, 21, 1, 0, 9};
-
-    v = insertionSort(v);
-
-    for (auto x:v) {
-        cout << x << " ";
-    }
-    cout << endl;
-    return 0;
-}

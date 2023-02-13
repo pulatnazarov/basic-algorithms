@@ -16,11 +16,3 @@ int binarySearch(vector<int> array, int key, int l, int r) {
     }
     return -1;
 }
-
-int32_t main() {
-    vector<int> array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int result = binarySearch(array, 0, 0, array.size() - 1);
-    (result == -1) ? cout << "Not found\n" : cout << "Found at index " << result << endl;
-
-    return 0;
-}

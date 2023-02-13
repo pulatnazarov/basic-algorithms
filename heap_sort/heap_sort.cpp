@@ -24,7 +24,7 @@ void heapify(vector<int> &arr, int N, int i) {
     }
 }
 
-void heapSort(vector<int> &arr, int N) {
+vector<int> heapSort(vector<int> &arr, int N) {
 
     for (int i = N / 2 - 1; i >= 0; i--)
         heapify(arr, N, i);
@@ -35,20 +35,5 @@ void heapSort(vector<int> &arr, int N) {
 
         heapify(arr, i, 0);
     }
-}
-
-void printArray(vector<int> &arr, int N) {
-    for (int i = 0; i < N; ++i)
-        cout << arr[i] << " ";
-    cout << "\n";
-}
-
-int32_t main() {
-    vector<int> arr = { 12, 11, 13, 5, 6, 7 };
-    int N = arr.size();
-
-    heapSort(arr, N);
-
-    cout << "Sorted array is \n";
-    printArray(arr, N);
+    return arr;
 }

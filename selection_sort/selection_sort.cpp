@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int32_t main() {
-	vector<int> arr = {64, -25, 12, 22, 11};
+vector<int> selectionSort(vector<int> arr) {
 	int n = arr.size();
 	int i = 0;
 
@@ -21,9 +20,5 @@ int32_t main() {
         i++;
     }
 
-	cout << "Sorted array: \n";
-	for (int i=0; i<n; i++)
-        cout << arr[i] << " ";
-    cout << endl;
-	return 0;
+	return arr;
 }
